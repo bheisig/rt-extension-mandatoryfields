@@ -1,7 +1,6 @@
 <%INIT>
 my $ARGSRef = $ARGS{'ARGSRef'};
 my %mandatoryFields = RT->Config->Get('MandatoryFields');
-# @todo check wether setting exists
 if ( $$ARGSRef{'QuickCreate'} ) {
     if ( (exists $mandatoryFields{'Requestors'}) && ($mandatoryFields{'Requestors'} eq 'true') && ( (!$$ARGSRef{'Requestors'}) || ($$ARGSRef{'Requestors'} =~ /^[ \t]*$/) ) ) {
         $$skip_create = 1;
