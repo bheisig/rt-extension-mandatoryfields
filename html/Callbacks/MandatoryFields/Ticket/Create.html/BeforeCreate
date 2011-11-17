@@ -1,6 +1,7 @@
 <%INIT>
 my $ARGSRef = $ARGS{'ARGSRef'};
 my %mandatoryFields = RT->Config->Get('MandatoryFields');
+# @todo check wether setting exists
 if ( (!exists $$ARGSRef{'AddMoreAttach'}) and (defined($$ARGSRef{'id'}) and $$ARGSRef{'id'} eq 'new') ) {
     if ( (exists $mandatoryFields{'Requestors'}) && ($mandatoryFields{'Requestors'} eq 'true') && ( (!$$ARGSRef{'Requestors'}) || ($$ARGSRef{'Requestors'} =~ /^[ \t]*$/) ) ) {
         $$skip_create = 1;

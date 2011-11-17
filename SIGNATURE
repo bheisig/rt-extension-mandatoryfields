@@ -1,0 +1,46 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.66.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 ca18478ab39deeed4dce0ccb179cc3cb6c888928 Changes
+SHA1 d85e045241fe9e8bf503545ff941ea30a138c3ee MANIFEST
+SHA1 77ced8f8c2b3af4e46da0fe01709e35dfbbcd7d4 META.yml
+SHA1 26014c30d49f82bb62960eef56071df28d274e34 Makefile.PL
+SHA1 3f2cadc90ef09e652cb484cec8ef28599a2d21f9 README
+SHA1 ad6158c89066558053ad51982cb9347e2b34ac13 README.md
+SHA1 aadc3031408203e64aa52c74652b3a2058c287aa html/Callbacks/MandatoryFields/SelfService/Create.html/BeforeCreate
+SHA1 d2572dbee425fc001516a1193561faa60dbac173 html/Callbacks/MandatoryFields/Ticket/Create.html/BeforeCreate
+SHA1 0c5479988330eb72d329d8e2a105560063c5af24 html/Callbacks/MandatoryFields/index.html/Initial
+SHA1 7305dbe2904416e28decb05396988a5d51d578be inc/Module/Install.pm
+SHA1 129960509127732258570c122042bc48615222e1 inc/Module/Install/Base.pm
+SHA1 cf3356ed9a5bd2f732527ef9e7bc5ef4458c8a93 inc/Module/Install/Can.pm
+SHA1 bf0a3e1977effc2832d7a813a76dce3f31b437b6 inc/Module/Install/Fetch.pm
+SHA1 b721c93ca5bc9a6aa863b49af15f1b1de6125935 inc/Module/Install/Makefile.pm
+SHA1 026cc0551a0ad399d195e395b46bdf842e115192 inc/Module/Install/Metadata.pm
+SHA1 4c845c66385929c9d080228ddf2e730066b310d3 inc/Module/Install/RTx.pm
+SHA1 5457015ea5a50e93465bf2dafa29feebd547f85b inc/Module/Install/Win32.pm
+SHA1 051e7fa8063908befa3440508d0584a2497b97db inc/Module/Install/WriteAll.pm
+SHA1 7f5e90b7230d1820d476385c4e041eec03d52df6 lib/RT/Extension/MandatoryFields.pm
+SHA1 d31067f48b1ae76459f9acae8abc75450d7654e7 t/00-load.t
+SHA1 105efdbac9828b2091f518dcd06d1f0f63ee7f0d t/boilerplate.t
+SHA1 0b1c5a2d59be6bfa7d60c64cd964fea6a0331705 t/pod-coverage.t
+SHA1 640935336dc1123c0069bcf5432bcaedc2cf22d3 t/pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iEYEARECAAYFAk7E+6QACgkQWFkxZRfLwXJIqwCeIPpeY8lnF1rVXP+7Fb6g5HlU
+zCkAoMF1hyOv8nJYW6QEKdECQgoRycFc
+=oZNP
+-----END PGP SIGNATURE-----

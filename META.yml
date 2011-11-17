@@ -14,7 +14,7 @@ meta-spec:
   version: 1.4
 name: RT-Extension-MandatoryFields
 no_index:
-  file
+  file:
     - README.md
   directory:
     - html

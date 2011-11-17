@@ -16,6 +16,8 @@ Makefile.PL
 MANIFEST
 META.yml
 README
+README.md
+SIGNATURE
 t/00-load.t
 t/boilerplate.t
 t/pod-coverage.t
