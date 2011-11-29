@@ -39,7 +39,7 @@ CONFIGURATION
             'Status' => 'true',
             'Owner' => 'true',
             'InitialPriority' => 'true',
-            'FinalPriority' => 'true'
+            'FinalPriority' => 'true',
             'TimeEstimated' => 'true',
             'TimeWorked' => 'true',
             'TimeLeft' => 'true',

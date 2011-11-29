@@ -18,7 +18,7 @@ SHA1 70a0a7f684223fb03a03128a3145155189263672 Changes
 SHA1 57e68d14ba14a2875c8104c5bdafcbff6200e3df MANIFEST
 SHA1 0ed6fe4dd09b6ac0a8b19b46cb39a3dc8e6020e6 META.yml
 SHA1 b5c29425470bb119d547862367055a17e2f280ac Makefile.PL
-SHA1 4e122ca06ec01a94e27a6c8ee3041b8b33c5417c README
+SHA1 3e61bbdd587af665b558ff60a4cf8ab10df3579e README
 SHA1 902a42a26361170e89ef1a21e98f9512fd333cd2 html/Callbacks/MandatoryFields/SelfService/Create.html/BeforeCreate
 SHA1 5aa16e156b6bc1d2e6a99e5334478c5101e3c778 html/Callbacks/MandatoryFields/Ticket/Create.html/BeforeCreate
 SHA1 3ac6a65db405792901c9e8d12770fb49721430e3 html/Callbacks/MandatoryFields/index.html/Initial
@@ -36,7 +36,7 @@ SHA1 5c589819986050dd79faf8572992a9790ae89f2e inc/Module/Install/RTx/Factory.pm
 SHA1 dc972927565015ffbbaae806ff44634cae6fa1d2 inc/Module/Install/ReadmeFromPod.pm
 SHA1 0ae795f0a9b6783872d393f92f9dc7173f7632e9 inc/Module/Install/Win32.pm
 SHA1 2ad05d85780f32385e90fc76da59f635d453e29a inc/Module/Install/WriteAll.pm
-SHA1 ccbdc30a6149643e7e3db0394cce53e01f2565e2 lib/RT/Extension/MandatoryFields.pm
+SHA1 a43d3773a65774357b934fdde2c8b55269ede5cb lib/RT/Extension/MandatoryFields.pm
 SHA1 d31067f48b1ae76459f9acae8abc75450d7654e7 t/00-load.t
 SHA1 105efdbac9828b2091f518dcd06d1f0f63ee7f0d t/boilerplate.t
 SHA1 0b1c5a2d59be6bfa7d60c64cd964fea6a0331705 t/pod-coverage.t
@@ -44,7 +44,7 @@ SHA1 640935336dc1123c0069bcf5432bcaedc2cf22d3 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iEYEARECAAYFAk7UrxkACgkQWFkxZRfLwXLVjgCdEqSucnGIErgl74c9vbjjLYZw
-aGcAoLHloER4pT1fJPBUB45zc2jRsX3c
-=KCNq
+iEYEARECAAYFAk7UslwACgkQWFkxZRfLwXJ4ogCfUQ2UEHh4046N+8rWkl34vyIs
+9kAAoJWxWRVbTx8c0z8qy1W/VvO7sMgb
+=rXOr
 -----END PGP SIGNATURE-----
