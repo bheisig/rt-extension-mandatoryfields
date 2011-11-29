@@ -56,7 +56,7 @@ To enforce users to fill the standard fields add them to C<%MandatoryFields>:
         'Status' => 'true',
         'Owner' => 'true',
         'InitialPriority' => 'true',
-        'FinalPriority' => 'true'
+        'FinalPriority' => 'true',
         'TimeEstimated' => 'true',
         'TimeWorked' => 'true',
         'TimeLeft' => 'true',
