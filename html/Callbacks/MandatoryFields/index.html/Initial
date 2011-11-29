@@ -2,20 +2,11 @@
 my $ARGSRef = $ARGS{'ARGSRef'};
 my %mandatoryFields = RT->Config->Get('MandatoryFields');
 if ( $$ARGSRef{'QuickCreate'} ) {
+## Message details
     if ( (exists $mandatoryFields{'Requestors'}) && ($mandatoryFields{'Requestors'} eq 'true') && ( (!$$ARGSRef{'Requestors'}) || ($$ARGSRef{'Requestors'} =~ /^[ \t]*$/) ) ) {
         $$skip_create = 1;
         push @{$results}, loc('Error: empty requestors');
     }
-## Cc does not exist in this context.
-#    if ( (exists $mandatoryFields{'Cc'}) && ($mandatoryFields{'Cc'} eq 'true') && ( (!$$ARGSRef{'Cc'}) || ($$ARGSRef{'Cc'} =~ /^[ \t]*$/) ) ) {
-#        $$skip_create = 1;
-#        push @{$results}, loc('Error: empty cc');
-#    }
-## AdminCc does not exist in this context.
-#    if ( (exists $mandatoryFields{'AdminCc'}) && ($mandatoryFields{'AdminCc'} eq 'true') && ( (!$$ARGSRef{'AdminCc'}) || ($$ARGSRef{'AdminCc'} =~ /^[ \t]*$/) ) ) {
-#        $$skip_create = 1;
-#        push @{$results}, loc('Error: empty admin cc');
-#    }
     if ( (exists $mandatoryFields{'Subject'}) && ($mandatoryFields{'Subject'} eq 'true') && ( (!$$ARGSRef{'Subject'}) || ($$ARGSRef{'Subject'} =~ /^[ \t]*$/) ) ) {
         $$skip_create = 1;
         push @{$results}, loc('Error: empty subject');
@@ -24,16 +15,11 @@ if ( $$ARGSRef{'QuickCreate'} ) {
         $$skip_create = 1;
         push @{$results}, loc('Error: empty content');
     }
-## Attach does not exist in this context.
-#    if ( (exists $mandatoryFields{'Attach'}) && ($mandatoryFields{'Attach'} eq 'true') && ( (!$$ARGSRef{'Attach'}) || ($$ARGSRef{'Attach'} =~ /^[ \t]*$/) ) ) {
-#        $$skip_create = 1;
-#        push @{$results}, loc('Error: empty attach');
-#    }
-## Status does not exist in this context.
-#    if ( (exists $mandatoryFields{'Status'}) && ($mandatoryFields{'Status'} eq 'true') && ( (!$$ARGSRef{'Status'}) || ($$ARGSRef{'Status'} =~ /^[ \t]*$/) ) ) {
-#        $$skip_create = 1;
-#        push @{$results}, loc('Error: empty status');
-#    }
+## Meta data
+    if ( (exists $mandatoryFields{'Queue'}) && ($mandatoryFields{'Queue'} eq 'true') && ( (!$$ARGSRef{'Queue'}) || ($$ARGSRef{'Queue'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty queue');
+    }
     if ( (exists $mandatoryFields{'Owner'}) && ($mandatoryFields{'Owner'} eq 'true') && ( (!$$ARGSRef{'Owner'}) || ($$ARGSRef{'Owner'} =~ /^[ \t]*$/) ) ) {
         $$skip_create = 1;
         push @{$results}, loc('Error: empty owner');

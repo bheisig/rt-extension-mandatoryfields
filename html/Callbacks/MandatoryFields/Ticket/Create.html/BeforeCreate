@@ -2,6 +2,7 @@
 my $ARGSRef = $ARGS{'ARGSRef'};
 my %mandatoryFields = RT->Config->Get('MandatoryFields');
 if ( (!exists $$ARGSRef{'AddMoreAttach'}) and (defined($$ARGSRef{'id'}) and $$ARGSRef{'id'} eq 'new') ) {
+## Message details
     if ( (exists $mandatoryFields{'Requestors'}) && ($mandatoryFields{'Requestors'} eq 'true') && ( (!$$ARGSRef{'Requestors'}) || ($$ARGSRef{'Requestors'} =~ /^[ \t]*$/) ) ) {
         $$skip_create = 1;
         push @{$results}, loc('Error: empty requestors');
@@ -26,6 +27,7 @@ if ( (!exists $$ARGSRef{'AddMoreAttach'}) and (defined($$ARGSRef{'id'}) and $$AR
         $$skip_create = 1;
         push @{$results}, loc('Error: empty attach');
     }
+## Meta data
     if ( (exists $mandatoryFields{'Status'}) && ($mandatoryFields{'Status'} eq 'true') && ( (!$$ARGSRef{'Status'}) || ($$ARGSRef{'Status'} =~ /^[ \t]*$/) ) ) {
         $$skip_create = 1;
         push @{$results}, loc('Error: empty status');
@@ -33,6 +35,61 @@ if ( (!exists $$ARGSRef{'AddMoreAttach'}) and (defined($$ARGSRef{'id'}) and $$AR
     if ( (exists $mandatoryFields{'Owner'}) && ($mandatoryFields{'Owner'} eq 'true') && ( (!$$ARGSRef{'Owner'}) || ($$ARGSRef{'Owner'} =~ /^[ \t]*$/) ) ) {
         $$skip_create = 1;
         push @{$results}, loc('Error: empty owner');
+    }
+## Basics
+    if ( (exists $mandatoryFields{'InitialPriority'}) && ($mandatoryFields{'InitialPriority'} eq 'true') && ( (!$$ARGSRef{'InitialPriority'}) || ($$ARGSRef{'InitialPriority'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty intial priority');
+    }
+    if ( (exists $mandatoryFields{'FinalPriority'}) && ($mandatoryFields{'FinalPriority'} eq 'true') && ( (!$$ARGSRef{'FinalPriority'}) || ($$ARGSRef{'FinalPriority'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty final priority');
+    }
+    if ( (exists $mandatoryFields{'TimeEstimated'}) && ($mandatoryFields{'TimeEstimated'} eq 'true') && ( (!$$ARGSRef{'TimeEstimated'}) || ($$ARGSRef{'TimeEstimated'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty time estimated');
+    }
+    if ( (exists $mandatoryFields{'TimeWorked'}) && ($mandatoryFields{'TimeWorked'} eq 'true') && ( (!$$ARGSRef{'TimeWorked'}) || ($$ARGSRef{'TimeWorked'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty time worked');
+    }
+    if ( (exists $mandatoryFields{'TimeLeft'}) && ($mandatoryFields{'TimeLeft'} eq 'true') && ( (!$$ARGSRef{'TimeLeft'}) || ($$ARGSRef{'TimeLeft'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty time left');
+    }
+## Dates
+    if ( (exists $mandatoryFields{'Starts'}) && ($mandatoryFields{'Starts'} eq 'true') && ( (!$$ARGSRef{'Starts'}) || ($$ARGSRef{'Starts'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty start date');
+    }
+    if ( (exists $mandatoryFields{'Due'}) && ($mandatoryFields{'Due'} eq 'true') && ( (!$$ARGSRef{'Due'}) || ($$ARGSRef{'Due'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty due date');
+    }
+## Links
+    if ( (exists $mandatoryFields{'new-DependsOn'}) && ($mandatoryFields{'new-DependsOn'} eq 'true') && ( (!$$ARGSRef{'new-DependsOn'}) || ($$ARGSRef{'new-DependsOn'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty depends on');
+    }
+    if ( (exists $mandatoryFields{'DependsOn-new'}) && ($mandatoryFields{'DependsOn-new'} eq 'true') && ( (!$$ARGSRef{'DependsOn-new'}) || ($$ARGSRef{'DependsOn-new'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty depended on by');
+    }
+    if ( (exists $mandatoryFields{'new-MemberOf'}) && ($mandatoryFields{'new-MemberOf'} eq 'true') && ( (!$$ARGSRef{'new-MemberOf'}) || ($$ARGSRef{'new-MemberOf'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty parents');
+    }
+    if ( (exists $mandatoryFields{'MemberOf-new'}) && ($mandatoryFields{'MemberOf-new'} eq 'true') && ( (!$$ARGSRef{'MemberOf-new'}) || ($$ARGSRef{'MemberOf-new'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty children');
+    }
+    if ( (exists $mandatoryFields{'new-RefersTo'}) && ($mandatoryFields{'new-RefersTo'} eq 'true') && ( (!$$ARGSRef{'new-RefersTo'}) || ($$ARGSRef{'new-RefersTo'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty refers to');
+    }
+    if ( (exists $mandatoryFields{'RefersTo-new'}) && ($mandatoryFields{'RefersTo-new'} eq 'true') && ( (!$$ARGSRef{'RefersTo-new'}) || ($$ARGSRef{'RefersTo-new'} =~ /^[ \t]*$/) ) ) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty referred to by');
     }
 }
 </%INIT>

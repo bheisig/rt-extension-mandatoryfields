@@ -1,5 +1,11 @@
 Revision history for RT-Extension-MandatoryFields
 
+0.3     Tue, 29 Nov 2011 11:08:11 +0100
+        more supported fields
+        updated installation routines
+        improved meta information
+        enhanced documentation (now POD only)
+
 0.2     Thu, 17 Nov 2011 15:11:23 +0100
         re-packaging
 
