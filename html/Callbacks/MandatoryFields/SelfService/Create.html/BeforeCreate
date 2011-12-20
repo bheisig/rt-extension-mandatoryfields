@@ -17,7 +17,7 @@ if ((defined($$ARGSRef{'id'}) && $$ARGSRef{'id'} eq 'new')) {
         ## Message details
         'Requestors',
         'Cc',
-        'Subject'
+        'Subject',
         'Content',
         'Attach',
     );
