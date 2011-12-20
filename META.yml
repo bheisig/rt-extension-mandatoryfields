@@ -16,6 +16,8 @@ meta-spec:
   version: 1.4
 name: RT-Extension-MandatoryFields
 no_index:
+  file:
+    - TODO
   directory:
     - html
     - inc
@@ -23,4 +25,4 @@ no_index:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://git.benjaminheisig.net/rt-extension-mandatoryfields.git
-version: 0.3
+version: 0.4

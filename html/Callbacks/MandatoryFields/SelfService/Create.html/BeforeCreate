@@ -1,30 +1,38 @@
+%# RT::Extension::MandatoryFields
+%#
+%# Copyright 2011 synetics GmbH, http://i-doit.org/
+%#
+%# This program is free software; you can redistribute it and/or modify it under
+%# the same terms as Perl itself.
+%#
+%# Request Tracker (RT) is Copyright Best Practical Solutions, LLC.
+
 <%INIT>
 my $ARGSRef = $ARGS{'ARGSRef'};
-my %mandatoryFields = RT->Config->Get('MandatoryFields');
-if ( (defined($$ARGSRef{'id'}) and $$ARGSRef{'id'} eq 'new') ) {
-## Message details
-    if ( (exists $mandatoryFields{'Requestors'}) && ($mandatoryFields{'Requestors'} eq 'true') && ( (!$$ARGSRef{'Requestors'}) || ($$ARGSRef{'Requestors'} =~ /^[ \t]*$/) ) ) {
-        $$skip_create = 1;
-        push @{$results}, loc('Error: empty requestors');
-    }
-    if ( (exists $mandatoryFields{'Cc'}) && ($mandatoryFields{'Cc'} eq 'true') && ( (!$$ARGSRef{'Cc'}) || ($$ARGSRef{'Cc'} =~ /^[ \t]*$/) ) ) {
-        $$skip_create = 1;
-        push @{$results}, loc('Error: empty cc');
-    }
-    if ( (exists $mandatoryFields{'Subject'}) && ($mandatoryFields{'Subject'} eq 'true') && ( (!$$ARGSRef{'Subject'}) || ($$ARGSRef{'Subject'} =~ /^[ \t]*$/) ) ) {
-        $$skip_create = 1;
-        push @{$results}, loc('Error: empty subject');
-    }
-    if ( (exists $mandatoryFields{'Content'}) && ($mandatoryFields{'Content'} eq 'true') && ( (!$$ARGSRef{'Content'}) || ($$ARGSRef{'Content'} =~ /^[ \t]*$/) ) ) {
-        $$skip_create = 1;
-        push @{$results}, loc('Error: empty content');
-    }
-    if ( (exists $mandatoryFields{'Attach'}) && ($mandatoryFields{'Attach'} eq 'true') && ( (!$$ARGSRef{'Attach'}) || ($$ARGSRef{'Attach'} =~ /^[ \t]*$/) ) ) {
-        $$skip_create = 1;
-        push @{$results}, loc('Error: empty attach');
+
+if ((defined($$ARGSRef{'id'}) && $$ARGSRef{'id'} eq 'new')) {
+    my %mandatoryFields = RT->Config->Get('MandatoryFields');
+
+    my @supportedFields = (
+        ## Message details
+        'Requestors',
+        'Cc',
+        'Subject'
+        'Content',
+        'Attach',
+    );
+
+    for my $field (@supportedFields) {
+        if ((exists $mandatoryFields{$field}) &&
+            ($mandatoryFields{$field} eq 'true') &&
+            ((!$$ARGSRef{$field}) || ($$ARGSRef{$field} =~ /^[ \t]*$/))) {
+            $$skip_create = 1;
+            push @{$results}, loc('[_1]: mandatory field', $field);
+        }
     }
 }
 </%INIT>
+
 <%ARGS>
 $skip_create => undef
 $results => undef

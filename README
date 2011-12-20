@@ -21,7 +21,7 @@ INSTALLATION
 CONFIGURATION
   RT SITE CONFIGURATION
     To enable this extension edit the RT site configuration located in
-    "$RT_HOME/etc/RT_SiteConfig" (where $RT_HOME is the path to your RT
+    "$RT_HOME/etc/RT_SiteConfig.pm" (where $RT_HOME is the path to your RT
     installation):
 
         Set(@Plugins,qw(RT::Extension::MandatoryFields));
@@ -37,7 +37,9 @@ CONFIGURATION
             'Content' => 'true',
             'Attach' => 'true',
             'Status' => 'true',
+            'Queue' => 'true',
             'Owner' => 'true',
+            'Priority' => 'true',
             'InitialPriority' => 'true',
             'FinalPriority' => 'true',
             'TimeEstimated' => 'true',
@@ -75,6 +77,7 @@ CONFIGURATION
         Queue             not editable  included        not editable
         Status            included      not included    not included
         Owner             included      included        not included
+        Priority          included      not included    not included
         InitialPriority   included      not included    not included
         FinalPriority     included      not included    not included
         TimeEstimated     included      not included    not included

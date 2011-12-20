@@ -4,7 +4,7 @@ use 5.010;
 use warnings;
 use strict;
 
-our $VERSION = '0.3';
+our $VERSION = '0.4';
 
 
 =head1 NAME
@@ -39,7 +39,7 @@ following commands:
 =head2 RT SITE CONFIGURATION
 
 To enable this extension edit the RT site configuration located in
-C<$RT_HOME/etc/RT_SiteConfig> (where C<$RT_HOME> is the path to your RT
+C<$RT_HOME/etc/RT_SiteConfig.pm> (where C<$RT_HOME> is the path to your RT
 installation):
 
     Set(@Plugins,qw(RT::Extension::MandatoryFields));
@@ -54,7 +54,9 @@ To enforce users to fill the standard fields add them to C<%MandatoryFields>:
         'Content' => 'true',
         'Attach' => 'true',
         'Status' => 'true',
+        'Queue' => 'true',
         'Owner' => 'true',
+        'Priority' => 'true',
         'InitialPriority' => 'true',
         'FinalPriority' => 'true',
         'TimeEstimated' => 'true',
@@ -91,6 +93,7 @@ summarize which formular supports which mandatory field.
     Queue             not editable  included        not editable
     Status            included      not included    not included
     Owner             included      included        not included
+    Priority          included      not included    not included
     InitialPriority   included      not included    not included
     FinalPriority     included      not included    not included
     TimeEstimated     included      not included    not included
