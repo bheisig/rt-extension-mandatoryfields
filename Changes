@@ -1,5 +1,9 @@
 Revision history for RT-Extension-MandatoryFields
 
+0.5     Tue, 03 Jan 2012 09:53:08 +0100
+        added Spanish and Catalan translations
+        localize field names
+
 0.4     Tue, 20 Dec 2011 12:40:16 +0100
         added priority field
         added German translation

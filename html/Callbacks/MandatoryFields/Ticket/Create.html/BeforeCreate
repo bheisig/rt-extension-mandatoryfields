@@ -49,7 +49,7 @@ if ((!exists $$ARGSRef{'AddMoreAttach'}) &&
             ($mandatoryFields{$field} eq 'true') &&
             ((!$$ARGSRef{$field}) || ($$ARGSRef{$field} =~ /^[ \t]*$/))) {
             $$skip_create = 1;
-            push @{$results}, loc('[_1]: mandatory field', $field);
+            push @{$results}, loc('[_1]: mandatory field', loc($field));
         }
     }
 }

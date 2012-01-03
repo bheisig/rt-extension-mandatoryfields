@@ -20,7 +20,9 @@ lib/RT/Extension/MandatoryFields.pm
 Makefile.PL
 MANIFEST			This list of files
 META.yml
+po/ca.po
 po/de.po
+po/es.po
 README
 SIGNATURE
 t/00-load.t
