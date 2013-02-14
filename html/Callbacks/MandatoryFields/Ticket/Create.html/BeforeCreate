@@ -46,7 +46,11 @@ if ((!exists $$ARGSRef{'AddMoreAttach'}) &&
 
     for my $field (@supportedFields) {
         if ((exists $mandatoryFields{$field}) &&
-            ($mandatoryFields{$field} eq 'true') &&
+            ( ( !(ref $mandatoryFields{$field} eq 'ARRAY') &&
+                   (($mandatoryFields{$field} eq 'true') ||
+                   ($mandatoryFields{$field} eq 'all')) ) ||
+              (  (ref $mandatoryFields{$field} eq 'ARRAY') &&
+                   (grep {$_ eq $$ARGSRef{Queue}} @{$mandatoryFields{$field}})) ) &&
             ((!$$ARGSRef{$field}) || ($$ARGSRef{$field} =~ /^[ \t]*$/))) {
             $$skip_create = 1;
             push @{$results}, loc('[_1]: mandatory field', loc($field));
