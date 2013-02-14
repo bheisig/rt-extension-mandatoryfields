@@ -1,6 +1,6 @@
 package RT::Extension::MandatoryFields;
 
-use 5.010;
+use 5.008;
 use warnings;
 use strict;
 
