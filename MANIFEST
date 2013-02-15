@@ -23,6 +23,7 @@ META.yml
 po/ca.po
 po/de.po
 po/es.po
+po/it.po
 README
 SIGNATURE
 t/00-load.t
