@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.70.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,15 +14,15 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 8c9bb579e5b8df1d1f8728e3372048fe55061b62 Changes
-SHA1 939df79b8f821c90d2bc57912567235d814aacd2 MANIFEST
-SHA1 69709a394194d42b8c8e864ae8974e22227805af META.yml
+SHA1 842747fff494ca032e2ff411346f2b9b85de55ab Changes
+SHA1 452e4e0602895f0bd31f8325d2886e6899831c60 MANIFEST
+SHA1 35b3f5cec24e815b72dff2518fad91c77cb49312 META.yml
 SHA1 b5c29425470bb119d547862367055a17e2f280ac Makefile.PL
-SHA1 25fcdcfc5427a1378dbaa13695a27d552b45a293 README
+SHA1 ac3dea7dbf22c02fe5bb6f037d45aaff07f06563 README
 SHA1 724567b3c0a4218f0fe2599432026ac6f24f1556 TODO
-SHA1 00af4d4eef6a763c5d62572564e443bc7975d078 html/Callbacks/MandatoryFields/SelfService/Create.html/BeforeCreate
-SHA1 f30132ccb7c78b12bf1c3350c78306ed0f2c4cbb html/Callbacks/MandatoryFields/Ticket/Create.html/BeforeCreate
-SHA1 197f3f8cf60de4b59d954bd27950749b45cce142 html/Callbacks/MandatoryFields/index.html/Initial
+SHA1 11c5b664aa674a0ad43c56ce83492b21d3823276 html/Callbacks/MandatoryFields/SelfService/Create.html/BeforeCreate
+SHA1 deb06a648b85a69ec091c9d897c13e1a1df279ab html/Callbacks/MandatoryFields/Ticket/Create.html/BeforeCreate
+SHA1 15dcda02840c3fd99c1afb5b3964e99c990cf1c1 html/Callbacks/MandatoryFields/index.html/Initial
 SHA1 59e69e8b99149999c0c74e6031def042569410aa inc/Module/AutoInstall.pm
 SHA1 eba6465ce5287959acc940e75b080205960b7ac6 inc/Module/Install.pm
 SHA1 9dc7102b5e2c3a791205ecc4f9d84a56632253ef inc/Module/Install/AutoInstall.pm
@@ -37,18 +37,24 @@ SHA1 5c589819986050dd79faf8572992a9790ae89f2e inc/Module/Install/RTx/Factory.pm
 SHA1 dc972927565015ffbbaae806ff44634cae6fa1d2 inc/Module/Install/ReadmeFromPod.pm
 SHA1 0ae795f0a9b6783872d393f92f9dc7173f7632e9 inc/Module/Install/Win32.pm
 SHA1 2ad05d85780f32385e90fc76da59f635d453e29a inc/Module/Install/WriteAll.pm
-SHA1 1ee3998a88180b4fe1ed1a44bbe6d36354d3db9b lib/RT/Extension/MandatoryFields.pm
+SHA1 444afd4f96e3e4a36ccefd82836eef08fa0506f4 lib/RT/Extension/MandatoryFields.pm
 SHA1 07906c6c7ba6bcdc8533fd3e3d0a29c0002ae2c6 po/ca.po
 SHA1 a39fa4ac0cd843324b39364a1b323cc61cdccbc1 po/de.po
 SHA1 b69d307a809b8083a8cf37bc1f3bf663b80b3aa3 po/es.po
+SHA1 9acc253dcb4105e7553d5eaffc3478e56dbf848b po/it.po
 SHA1 d31067f48b1ae76459f9acae8abc75450d7654e7 t/00-load.t
 SHA1 105efdbac9828b2091f518dcd06d1f0f63ee7f0d t/boilerplate.t
 SHA1 0b1c5a2d59be6bfa7d60c64cd964fea6a0331705 t/pod-coverage.t
 SHA1 640935336dc1123c0069bcf5432bcaedc2cf22d3 t/pod.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.11 (GNU/Linux)
+Version: GnuPG/MacGPG2 v2.0.18 (Darwin)
+Comment: GPGTools - http://gpgtools.org
 
-iEYEARECAAYFAk8CwgoACgkQWFkxZRfLwXJ1QQCdHdQklPJ79UVUz+7LCzKVZ9NI
-xloAn3cWne7d+SG1rTQ9cG/gy8pmbrMY
-=DR9r
+iQEcBAEBAgAGBQJRIfN2AAoJEE85/kziJYz04UUH/2I0TMH7D2T0OXkn2xnd052T
+O9h/opJs0tuE7wfsCnap4zRrFC+wOUknmgok29TraGuvO6WeaetEwyMlOak/NUl3
+tz0QA7H9MO3tVErVvOQoiT+4r/NXkPVianeXFfW9MfLDgvhOBHIQk66YM8zPMCsT
+ABdG/BGb0Dne2Ap+TDyhqSh2JRP6/moXbHj1pKQsaQ35WNvDqGjDB2QpQj+k0CwZ
+mYHKVyN5YQJnuZGjtv9MTO8bElMGCso2XePF4Ey/5lfRFF5D/Ixm5cte6XoqYArL
+Pc3fP5Ev0SLK+2JKT0ypGaV/5rS488GwohqYCRDete+nTgqHEyD5i5b5sLSknEA=
+=nDWc
 -----END PGP SIGNATURE-----
