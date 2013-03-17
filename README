@@ -58,8 +58,9 @@ CONFIGURATION
 
     Mark a mandatory field with "true", otherwise "false".
 
-    To specify the queues where fields are mandatory, list their Ids in 
-    %MandatoryFields. The keyword 'all' has the same effect as 'true':
+    To specify the queues where fields are mandatory, list their
+    identifiersin %MandatoryFields. The keyword "all" has the same effect as
+    "true":
 
         Set(%MandatoryFields, (
             'Requestors' => 'all',
@@ -149,6 +150,9 @@ BUGS
 ACKNOWLEDGEMENTS
     This extension is a fork of RT::Extension::MandatorySubject written by
     Emmanuel Lacour.
+
+    Thanks to Davide Imbeni, <davide.imbeni@gmail.com<gt> for his great
+    contribution!
 
 COPYRIGHT AND LICENSE
     Copyright 2011 synetics GmbH, <http://i-doit.org/>

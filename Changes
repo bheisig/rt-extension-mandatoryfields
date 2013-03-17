@@ -1,11 +1,9 @@
 Revision history for RT-Extension-MandatoryFields
 
-0.6     Fri, 15 Feb 2013 14:55:08 +0100
-        Allow the setting of a list of queue 
-        indeces where the field is mandatory. 
-	Also allow to use the keyword 'all' 
-	with the same effect as 'true'.
-	Aded Italian translation
+0.6     - tba -
+        Allow the setting of a list of queue indeces where the field is mandatory [Davide]
+        Also allow to use the keyword 'all' with the same effect as 'true' [Davide]
+        Added Italian translation [Davide]
 
 0.5     Tue, 03 Jan 2012 09:53:08 +0100
         added Spanish and Catalan translations

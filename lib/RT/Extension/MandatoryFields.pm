@@ -16,7 +16,8 @@ creating a ticket
 =head1 DESCRIPTION
 
 This RT Extension enforces users to fill standard fields defined in RT site
-configuration file when creating a ticket via the web interface.
+configuration file when creating a ticket via the web interface. Filling can be
+enforced on tickets created in specified queues only. 
 
 Note: This extension does not take effect on custom fields. RT has already a
 built-in feature to mark custom fields as mandatory.
@@ -73,6 +74,15 @@ To enforce users to fill the standard fields add them to C<%MandatoryFields>:
     ));
 
 Mark a mandatory field with C<true>, otherwise C<false>.
+
+To specify the queues where fields are mandatory, list their identifiersin
+C<%MandatoryFields>. The keyword C<all> has the same effect as C<true>:
+
+    Set(%MandatoryFields, (
+        'Requestors' => 'all',
+        'Cc' => [1],
+        'AdminCc' => [1, 2, 3]
+    ));
 
 Note: There are more than one way to create a new ticket. The default way is
 C<Create>, but there are C<QuickCreate> on the home page and C<SelfService> for
@@ -166,6 +176,9 @@ Please report any bugs or feature requests to the L<author|/"AUTHOR">.
 
 This extension is a fork of L<RT::Extension::MandatorySubject> written by
 Emmanuel Lacour.
+
+Thanks to  Davide Imbeni, E<lt>davide.imbeni@gmail.com<gt> for his great
+contribution!
 
 
 =head1 COPYRIGHT AND LICENSE
