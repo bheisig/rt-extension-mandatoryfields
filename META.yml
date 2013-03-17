@@ -25,4 +25,4 @@ no_index:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://git.benjaminheisig.net/rt-extension-mandatoryfields.git
-version: 0.5
+version: 0.6
