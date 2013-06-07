@@ -1,7 +1,7 @@
 #   Revision history for RT-Extension-MandatoryFields
 
 
-##  0.6 (unreleased)
+##  0.6 (Fri, 07 Jun 2013 14:27:22 +0200)
 
 *   Allow the setting of a list of queue indeces where the field is mandatory (thanks to Davide Imbeni)
 *   Also allow to use the keyword 'all' with the same effect as 'true' (Davide)

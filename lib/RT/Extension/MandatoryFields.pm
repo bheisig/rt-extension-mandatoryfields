@@ -75,7 +75,7 @@ To enforce users to fill the standard fields add them to C<%MandatoryFields>:
 
 Mark a mandatory field with C<true>, otherwise C<false>.
 
-To specify the queues where fields are mandatory, list their identifiersin
+To specify the queues where fields are mandatory, list their identifiers in
 C<%MandatoryFields>. The keyword C<all> has the same effect as C<true>:
 
     Set(%MandatoryFields, (

@@ -58,9 +58,8 @@ CONFIGURATION
 
     Mark a mandatory field with "true", otherwise "false".
 
-    To specify the queues where fields are mandatory, list their
-    identifiersin %MandatoryFields. The keyword "all" has the same effect as
-    "true":
+    To specify the queues where fields are mandatory, list their identifiers
+    in %MandatoryFields. The keyword "all" has the same effect as "true":
 
         Set(%MandatoryFields, (
             'Requestors' => 'all',
