@@ -46,8 +46,10 @@ META.yml
 po/ca.po
 po/de.po
 po/es.po
+po/fr.po
 po/it.po
 README
+RT-Extension-MandatoryFields-0.6.tar.gz
 SIGNATURE
 t/00-load.t
 t/boilerplate.t

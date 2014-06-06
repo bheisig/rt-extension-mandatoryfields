@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,12 +14,13 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 791f2a5739dcc356aa1d7f535ffb784a1f504287 Changes
-SHA1 860ac5b0fb548cf6d295087aefd6f3e9768e7dd6 MANIFEST
-SHA1 35b3f5cec24e815b72dff2518fad91c77cb49312 META.yml
-SHA1 b5c29425470bb119d547862367055a17e2f280ac Makefile.PL
+SHA1 c6568c8963c9b6d0eda194443bebed844fc44eb8 Changes
+SHA1 a21b98bfcf6249c4843d8cda684add218a93351a MANIFEST
+SHA1 a12df484e59c7c64e7d9737d482b6f47a647c51b META.yml
+SHA1 1f97af92f61b71126edd789e1003df914a50b325 Makefile.PL
 SHA1 164dbb14dea0417755fc771e0932cdb7b6f8dccb README
-SHA1 724567b3c0a4218f0fe2599432026ac6f24f1556 TODO
+SHA1 0b797899c2c4a3b2c6a266eab3bfd450baf6f6be RT-Extension-MandatoryFields-0.6.tar.gz
+SHA1 1d2769d4e2757cbf9a905a9ae4d2a8b4e5297ab3 TODO
 SHA1 11c5b664aa674a0ad43c56ce83492b21d3823276 html/Callbacks/MandatoryFields/SelfService/Create.html/BeforeCreate
 SHA1 deb06a648b85a69ec091c9d897c13e1a1df279ab html/Callbacks/MandatoryFields/Ticket/Create.html/BeforeCreate
 SHA1 15dcda02840c3fd99c1afb5b3964e99c990cf1c1 html/Callbacks/MandatoryFields/index.html/Initial
@@ -60,19 +61,20 @@ SHA1 8057872efd55c155d12f009cb190a81f7f775703 inc/Module/Install/Share.pm
 SHA1 3ef36786817df816cca65bcae5e987591512aeeb inc/Module/Install/Win32.pm
 SHA1 1349967ec3cd8c41a7717750ae23ede9824a2f39 inc/Module/Install/With.pm
 SHA1 b7fc200ced09546b337e460a29379e4bd6927ca2 inc/Module/Install/WriteAll.pm
-SHA1 c2ff748a5a1cf2e95ff8823abb746295c0753e03 lib/RT/Extension/MandatoryFields.pm
-SHA1 07906c6c7ba6bcdc8533fd3e3d0a29c0002ae2c6 po/ca.po
+SHA1 0ce0d324dc81c27e3f241e163606c0e468923509 lib/RT/Extension/MandatoryFields.pm
+SHA1 575d97f46242237f366cc120ec5ab28e00f42c70 po/ca.po
 SHA1 a39fa4ac0cd843324b39364a1b323cc61cdccbc1 po/de.po
-SHA1 b69d307a809b8083a8cf37bc1f3bf663b80b3aa3 po/es.po
+SHA1 5a591735ca8981abe4a30061c8a5d04482908bb5 po/es.po
+SHA1 eeb648395af2d8d057c6b76b0fef1f5d692ae290 po/fr.po
 SHA1 9acc253dcb4105e7553d5eaffc3478e56dbf848b po/it.po
 SHA1 d31067f48b1ae76459f9acae8abc75450d7654e7 t/00-load.t
 SHA1 105efdbac9828b2091f518dcd06d1f0f63ee7f0d t/boilerplate.t
 SHA1 0b1c5a2d59be6bfa7d60c64cd964fea6a0331705 t/pod-coverage.t
 SHA1 640935336dc1123c0069bcf5432bcaedc2cf22d3 t/pod.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.11 (GNU/Linux)
+Version: GnuPG v1
 
-iEYEARECAAYFAlGx0ccACgkQWFkxZRfLwXIp6ACglokpxY3rpbewffcU2WsA+dP/
-MnIAn1DhQuCKkoxmIpuVFWCaRMVONjhf
-=8Ilr
+iEYEARECAAYFAlORiysACgkQWFkxZRfLwXJAzQCgkN/gHzdaRaDEn8oNNyloAzOE
+pmMAoKu5bXEKmvVsADDWKz7ORDHDSSsl
+=Y0vX
 -----END PGP SIGNATURE-----

@@ -5,4 +5,4 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "%1: mandatory field"
-msgstr "%1: campo obligatorio"
+msgstr "%1: champs obligatoire"

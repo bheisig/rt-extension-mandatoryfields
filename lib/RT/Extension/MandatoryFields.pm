@@ -4,7 +4,7 @@ use 5.008;
 use warnings;
 use strict;
 
-our $VERSION = '0.6';
+our $VERSION = '0.7';
 
 
 =head1 NAME
@@ -17,7 +17,7 @@ creating a ticket
 
 This RT Extension enforces users to fill standard fields defined in RT site
 configuration file when creating a ticket via the web interface. Filling can be
-enforced on tickets created in specified queues only. 
+enforced on tickets created in specified queues only.
 
 Note: This extension does not take effect on custom fields. RT has already a
 built-in feature to mark custom fields as mandatory.
